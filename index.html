@@ -22,15 +22,15 @@
 
                     <div class="input-contenedor">
 
-                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Nombre" id="name">
                     </div>
                    
                     <div class="input-contenedor">
 
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" placeholder="Contraseña" id="password">
                     </div>
                     <div class="botonContenedors">
-                        <input type="submit" value="Entrar" class="button">      
+                        <input type="submit" value="Entrar" class="button" id="sendBtn">      
                     </div>
                     
                     <p>¿No tinenes una cuenta? <a href="registro.html" class="link"> Registrate</a></p>
@@ -43,4 +43,9 @@
     </div>
     
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+    <script type="text/javascript" src="js/model/usuario.js"></script>
+    <script type="text/javascript" src="js/control/index.js"></script>
 </html>

@@ -37,7 +37,8 @@ var firebaseConfig = {
         console.log(user);
 
     //registrar en db
-    database.ref().child("Usuarios").child(id).set(user);
+    database.ref().child("Usuarios").child(name).set(user);
+    window.location.href="/index.html";
 
     }
     else(alert("constraseña debe ser igual xd"));

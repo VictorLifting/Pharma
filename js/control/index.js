@@ -35,10 +35,13 @@ event.preventDefault();
 
         if (estObj.name==name&& estObj.password==password){
             console.log("ingresas xd")
-            storage.setItem("id", estObj.id);
-            window.location.href = "../farmacologicos.html"
+            storage.setItem("nombre", estObj.name);
+            window.location.href = "/farmacologicos.html"
         }
-        else(alert("usuario o contraseña incorrecta"));
+        //else(alert("usuario o contraseña incorrecta"));
+        if(estObj.name!=name&& estObj.password!=password){
+          alert("usuario o contraseña incorrecta");
+        }
       
       });
 

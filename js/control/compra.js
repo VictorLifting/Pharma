@@ -29,7 +29,7 @@ var firebaseConfig = {
 
 
   //Recuperación de datos
-const idEst = storage.getItem("id");
+const idEst = storage.getItem("nombre");
 
 
 console.log(idEst)
@@ -68,9 +68,11 @@ database.ref().child("Usuarios").child(idEst).on("value", function(snapshot){
         .child(id).set(compra);
 
 
-    console.log(compra)
+    alert(
+      "compra exitosa"
+    )
 
-     // window.location.href="farmacologicos.html";
+     window.location.href="farmacologicos.html";
   })
 
 
